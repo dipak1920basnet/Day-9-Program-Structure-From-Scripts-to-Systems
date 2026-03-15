@@ -1,0 +1,31 @@
+1️⃣ Why are multi-file programs easier to maintain?
+=> because in multi-file programs each file is seperated based on the task. 
+each task will have seperate logic this will make the state easier to track, transform and modify and debug too.
+
+2️⃣ Why should modules have single responsibilities?
+=> increase readability
+=> easier to trace the state
+=> increase reuseability
+=> avoid decision collison. 
+=> easier to change the state. 
+=> easier to debug the logical issue. 
+=> few lines of codes. 
+=> seperate function or own class 
+
+3️⃣ Why do large companies enforce strict architecture rules?
+=> large data.
+=> large program files. 
+=> A single business logic to too big. with stricture architecture the logic becomes breakable and easier to implement and develop, build and maintain and run smoothly
+=> scalability 
+=> team collaboration
+
+4️⃣ What problems arise when everything is in one file?
+=> Decision collison
+=> hard to trace state
+=> hard to debug
+=> hard to track logic 
+=> hard to read codes
+=> all the state in same page (maintainablity issue)
+=> hard to continue to transform the state
+=> hard to store the user data 
+=> etc
