@@ -1,0 +1,74 @@
+Real software systems are not one file
+
+they are structured programs composed of multiple modules with clear responsibilities
+
+example:: 
+main.py
+ ├── data_manager.py
+ ├── logic_engine.py
+ └── utils.py
+
+Problem with large scripts:
+hard to track states
+hard to debug
+hard to transforms 
+mixed logic 
+no modularity
+hard to navigate
+
+This is solved with modular architecture
+
+the core rule of software architecture:
+each module should have one responsibility.
+
+example:: 
+| File              | Responsibility        |
+| ----------------- | --------------------- |
+| `main.py`         | program entry point   |
+| `file_handler.py` | reading/writing files |
+| `task_logic.py`   | business logic        |
+| `utils.py`        | helper functions      |
+
+With this we have clean and understandable seperated codes. 
+
+#### Importing modules 
+Python allows the modules to import each other 
+
+example: 
+math_utils.py
+    def add(a,b):
+        return a + b 
+
+main.py:
+    import math_utils
+    print(math_utils.add(5,3))
+
+import specific functions: 
+from math_utils import add
+
+
+with: 
+    if __name__ == "__main__":
+        main()
+we can ensure that: 
+module can be imported safely
+
+code runs only when executed directly.
+
+
+
+Seperation of logic from input/output: 
+
+Bad_design:: 
+def calculate_total():
+    price = int(input("Enter price: "))
+    tax = int(input("Enter tax: "))
+    print(price + tax)
+
+good design:: 
+def calculate_total(price, tax):
+    return price + tax
+
+input output should be handled else where
+
+with this function can be testable and usable. 
