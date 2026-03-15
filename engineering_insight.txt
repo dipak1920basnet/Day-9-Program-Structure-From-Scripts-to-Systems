@@ -2,3 +2,10 @@
 => debugging entire program is hard so engineer will debug small modules. 
 
 => Seperate logic from input/ output
+
+=> Software is architecture first and the code 
+Beginner=> write code
+engineer => design systems. 
+
+
+Understand the architecture and the sturcture. 
