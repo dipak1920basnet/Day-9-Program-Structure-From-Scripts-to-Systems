@@ -1,3 +1,5 @@
+# 2️⃣ Guided Implementation (70 min)
+
 from operations import add
 from display import show_result
 
