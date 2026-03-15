@@ -1,0 +1,3 @@
+=> Clean architecture reduces the bug surface area. 
+=> debugging entire program is hard so engineer will debug small modules. 
+
