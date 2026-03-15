@@ -1,0 +1,45 @@
+broken_program structures:
+bug_1.py
+from math_utils import add
+
+print(add(5, 3))
+
+
+bug_2.py
+def add(a, b)
+    return a + b
+    
+
+":" missing from add function decleration.
+
+1️⃣ What error appears?
+=> Syntax error
+2️⃣ Why does Python reject this file?
+=> Invalid Syntax
+
+3️⃣ Fix it.
+Solution should be applied to bug2.py
+answer: 
+    def add(a, b):
+        return a + b
+
+
+
+
+Second_bug:: 
+import operations
+
+print(add(5, 3))
+
+unused import 
+missing import 
+
+1️⃣ Identify the issue
+=> Module not found error
+2️⃣ Fix the import usage.
+
+
+Solution: 
+    from bug_2 import add
+
+    print(add(5, 3))
